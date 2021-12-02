@@ -110,9 +110,13 @@
 
 <div align="center">
 
-## Database Schema
+## Database Schema.v1
 
 <img src="https://user-images.githubusercontent.com/73204318/144397612-e2cdde53-f8e4-4846-af7a-62ab46c6b587.png">
+
+## Wireframes.v1
+
+<img src="https://user-images.githubusercontent.com/73204318/144403041-da930e67-e43b-4357-99e3-0d2d9f2690e1.png">
 
 
 ## API Endpoints
