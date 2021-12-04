@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :activity do
-    title { "MyString" }
-    project { nil }
-    status { 1 }
+    title { Faker::Lorem.word }
+    project { 1 }
+    status { Faker::Number.between(from: 0, to: 2) }
   end
 end
