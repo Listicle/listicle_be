@@ -5,6 +5,7 @@ module Types
     field :projects, [Types::ProjectType], null: true
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
+    field :projects_count, Integer, null: true
 
     def projects_count
       object.projects.size
