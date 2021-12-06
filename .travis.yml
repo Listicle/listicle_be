@@ -1,0 +1,10 @@
+language: ruby
+rbenv:
+- 2.7.2
+addons:
+  postgresql: 9.6
+before_script:
+- bundle install --jobs=3 --retry=3
+script:
+- bundle exec rails db:{create,migrate} RAILS_ENV=test
+- bundle exec rspec
