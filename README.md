@@ -1,16 +1,15 @@
 <div align="center">
 
-# [LISTicle](https://github.com/Listicle)
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Forks][forks-shield]][forks-url]
-![Build Badge][build-badge]
-
-<img src="https://user-images.githubusercontent.com/73204318/144399613-fbb9206b-40e9-4d7e-ba53-f7d3192fedab.png"><br>
+<img src="https://user-images.githubusercontent.com/73204318/144802612-5f369fee-77d4-440c-9156-d637aa9a29e9.png"><br>
 <br>
 
-  An app for Listful thinkers.
+  [LISTICLE](https://github.com/Listicle).  Boost your productivity, to a whole new world.
+
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Issues][issues-shield]][issues-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Forks][forks-shield]][forks-url]
+  ![Build Badge][build-badge]
 
 ---
 
@@ -36,7 +35,7 @@
 |Develop / Test|Development|Testing|Deployment
 |--- |--- |--- |--- |
 |[<img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=flaste&logo=ruby&logoColor=white" />](https://www.ruby-lang.org/en/downloads/)|[<img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)|[ <img src="https://img.shields.io/badge/rspec-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />](https://github.com/rspec/rspec-rails)|[<img src="https://img.shields.io/badge/Heroku-430098.svg?&style=flaste&logo=heroku&logoColor=white" />](http://virtual-watch-party.herokuapp.com)|
-|[ <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />](https://rubygems.org/gems/rails/versions/5.2.6)|[<img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />](https://desktop.github.com/)|[<img src="https://img.shields.io/badge/capybara-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />](https://github.com/teamcapybara/capybara)|[<img src= "https://img.shields.io/badge/ci-circleCI-blue"/>](https://circleci.com/)|
+|[ <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />](https://rubygems.org/gems/rails/versions/5.2.6)|[<img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />](https://desktop.github.com/)|[<img src="https://img.shields.io/badge/capybara-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />](https://github.com/teamcapybara/capybara)|[<img src= "https://img.shields.io/badge/TravisCI-yellow"/>](https://travis-ci.com/)|
 |[<img src="https://img.shields.io/badge/pry-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />](https://rubygems.org/gems/pry/versions/0.10.3)|[<img src="https://img.shields.io/badge/b-bootstrap-yellow"/>](https://rubygems.org/gems/bootstrap/versions/4.0.0)|[<img src="https://img.shields.io/badge/webmock-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />](https://github.com/bblimke/webmock)
 |[<img src="https://img.shields.io/badge/sql-postgreSQL-green"/>](https://www.postgresql.org/)|[<img src="https://img.shields.io/badge/-HTML5-brightgreen"/>](https://developer.mozilla.org/en-US/docs/Web/HTML)|[<img src="https://img.shields.io/badge/-VCR-lightgrey"/>](https://github.com/vcr/vcr)
 |[<img src="https://img.shields.io/badge/-Postico-yellowgreen"/>](https://eggerapps.at/postico/)|[<img src="https://img.shields.io/badge/-CSS3-brightgreen"/>](https://developer.mozilla.org/en-US/docs/Web/CSS)|[<img src="https://img.shields.io/badge/launchy-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />](https://rubygems.org/gems/launchy/versions/2.4.3)
@@ -112,7 +111,7 @@
 
 ## Database Schema.v1
 
-<img src="https://user-images.githubusercontent.com/73204318/144397612-e2cdde53-f8e4-4846-af7a-62ab46c6b587.png">
+<img src="https://user-images.githubusercontent.com/73204318/144801901-07eb9107-23e3-41ef-a846-746aa3db37c1.png">
 
 ## Wireframes.v1
 
@@ -125,27 +124,9 @@ The following section displays the api endpoints.
 </div>
 
 #### GraphQL
-- GET /api/v1/graphql
-> Get all query data
+- GET /graphql   (query all data)
 
-- GET /api/v1/projects/:id
-> Get a parent details by id --
-> PATH PARAMETERS- :id (integer) REQUIRED
-
-- PATCH /api/v1/projects/:id
-> Update a section of a projects details by id --
-> PATH PARAMETERS- :id (integer) REQUIRED
-
-- PUT /api/v1/projects/:id
-> Update a projects details by id --
-> PATH PARAMETERS- :id (integer) REQUIRED
-
-- DELETE /api/v1/projects/:id
-> Remove a project by id --
-> PATH PARAMETERS- :id (integer) REQUIRED
-
-- POST /api/v1/projects
-> Create a project
+<img src="https://user-images.githubusercontent.com/73204318/144802260-d1320533-26a8-408d-a4cc-1f5f65970d96.png">
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
