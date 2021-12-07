@@ -262,7 +262,7 @@
         "lines": [
           1,
           1,
-          2,
+          3,
           null,
           null
         ]
@@ -287,10 +287,10 @@
           1,
           null,
           1,
-          1,
-          1,
+          2,
+          2,
           null,
-          1,
+          2,
           null,
           null,
           null,
@@ -425,35 +425,14 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/activity_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/activity.rb": {
+      "/Users/kevinn/turing/mod_4/listicle_be/app/models/user.rb": {
         "lines": [
           1,
           1,
           1,
-          null,
-          1,
           1,
           null,
-          null,
+          1,
           1,
           null
         ]
@@ -462,23 +441,6 @@
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/project_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          null,
           null
         ]
       },
@@ -494,62 +456,6 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/task_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/task.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/user_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/kevinn/turing/mod_4/listicle_be/app/controllers/graphql_controller.rb": {
         "lines": [
           1,
@@ -559,37 +465,37 @@
           null,
           null,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
           null,
           null,
           null,
-          1,
-          1,
-          null,
-          0,
-          0,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
+          2,
+          2,
           null,
           0,
           0,
           null,
-          0,
-          null,
-          null,
-          0,
-          null,
-          0,
           null,
           1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          0,
+          null,
+          2,
           null,
           0,
           null,
@@ -779,6 +685,8 @@
           1,
           1,
           1,
+          null,
+          null,
           1,
           1,
           null,
@@ -786,10 +694,14 @@
           0,
           null,
           null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1638836304
+    "timestamp": 1638844897
   }
 }

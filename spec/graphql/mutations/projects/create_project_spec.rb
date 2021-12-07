@@ -3,51 +3,52 @@ require 'rails_helper'
 module Mutations
   module Projects
     RSpec.describe CreateProject,type: :request do
-      it "can create a new project" do
-        tester = create(:user)
-        def query(user_id:)
-          <<~GQL
-            mutation {
-             createProject(input: {
-               projectName: "I will destroy you 2",
-               userId: #{user_id}
-             }) {
-               project {
-                 id,
-                 userId,
-                 projectName
-               }
-               errors
-             }
-            }
-          GQL
+      describe '.resolve' do
+        it "creates a new project" do
+          tester = create(:user)
 
-          # <<~GQL
-          #   mutation {
-          #     createBook(
-          #       authorId: #{user_id}
-          #       projectName: "Tripwire"
-          #     ) {
-          #       id
-          #       title
-          #       publicationDate
-          #       genre
-          #       author {
-          #         id
-          #       }
-          #     }
-          #   }
-          # GQL
+          expect do
+            post '/graphql', params: { query: query(user_id: tester.id)}
+
+          json = JSON.parse(response.body)
+          data = json['data']['createProject']
+          # require "pry"; binding.pry
+
+          end.to change { Project.count }.by(1)
         end
 
-        expect do
+        it 'returns a project' do
+          tester = create(:user)
+
           post '/graphql', params: { query: query(user_id: tester.id)}
+          json = JSON.parse(response.body)
+          data = json['data']['createProject']['project']
 
-        json = JSON.parse(response.body)
-        data = json['data']['createProject']
-        # require "pry"; binding.pry
+          expect(data['id']).to be_present
+          expect(data['id']).to be_a String
+          expect(data['userId']).to be_a Integer
+          expect(data['userId']).to eq(tester.id)
+          expect(data['projectName']).to be_a String
+          expect(data['projectName']).to eq("Wuv more")
+        end
+      end
 
-        end.to change { Project.count }.by(1)
+      def query(user_id:)
+        <<~GQL
+          mutation {
+           createProject(input: {
+             projectName: "Wuv more",
+             userId: #{user_id}
+           }) {
+             project {
+               id,
+               userId,
+               projectName
+             }
+             errors
+           }
+          }
+        GQL
       end
     end
   end
