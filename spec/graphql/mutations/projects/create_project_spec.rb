@@ -45,7 +45,7 @@ module Mutations
 
         json = JSON.parse(response.body)
         data = json['data']['createProject']
-        require "pry"; binding.pry
+        # require "pry"; binding.pry
 
         end.to change { Project.count }.by(1)
       end

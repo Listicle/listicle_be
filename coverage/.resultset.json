@@ -425,14 +425,35 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/user.rb": {
+      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/activity_spec.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kevinn/turing/mod_4/listicle_be/app/models/activity.rb": {
+        "lines": [
           1,
           1,
           1,
           null,
           1,
+          1,
+          null,
+          null,
           1,
           null
         ]
@@ -444,6 +465,23 @@
           null
         ]
       },
+      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/project_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/kevinn/turing/mod_4/listicle_be/app/models/project.rb": {
         "lines": [
           1,
@@ -452,6 +490,62 @@
           1,
           1,
           null,
+          1,
+          null
+        ]
+      },
+      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/task_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kevinn/turing/mod_4/listicle_be/app/models/task.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/kevinn/turing/mod_4/listicle_be/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/kevinn/turing/mod_4/listicle_be/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
           1,
           null
         ]
@@ -696,6 +790,6 @@
         ]
       }
     },
-    "timestamp": 1638817604
+    "timestamp": 1638836304
   }
 }
