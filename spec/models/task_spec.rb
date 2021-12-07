@@ -7,6 +7,6 @@ RSpec.describe Task, type: :model do
 
   describe 'Validations' do
     it { should validate_presence_of(:task_name) }
-    it { should validate_presence_of(:status) }
+    it { should validate_presence_of(:completed) }
   end
 end
