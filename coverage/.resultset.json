@@ -241,7 +241,7 @@
         "lines": [
           1,
           1,
-          1,
+          2,
           1,
           null,
           null
@@ -262,7 +262,7 @@
         "lines": [
           1,
           1,
-          3,
+          2,
           null,
           null
         ]
@@ -277,7 +277,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/create_project.rb": {
+      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/destroy_project.rb": {
         "lines": [
           1,
           1,
@@ -287,10 +287,10 @@
           1,
           null,
           1,
-          2,
-          2,
+          0,
+          0,
           null,
-          2,
+          0,
           null,
           null,
           null,
@@ -465,15 +465,15 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
-          2,
-          2,
+          1,
+          1,
           null,
           0,
           0,
@@ -483,7 +483,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           0,
           0,
@@ -495,7 +495,7 @@
           null,
           0,
           null,
-          2,
+          1,
           null,
           0,
           null,
@@ -581,7 +581,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/destroy_project.rb": {
+      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/create_project.rb": {
         "lines": [
           1,
           1,
@@ -702,6 +702,6 @@
         ]
       }
     },
-    "timestamp": 1638844897
+    "timestamp": 1638858481
   }
 }

@@ -12,7 +12,6 @@ module Mutations
 
           json = JSON.parse(response.body)
           data = json['data']['createProject']
-          # require "pry"; binding.pry
 
           end.to change { Project.count }.by(1)
         end
@@ -37,12 +36,12 @@ module Mutations
         <<~GQL
           mutation {
            createProject(input: {
-             projectName: "Wuv more",
              userId: #{user_id}
+             projectName: "Wuv more"
            }) {
              project {
-               id,
-               userId,
+               id
+               userId
                projectName
              }
              errors
