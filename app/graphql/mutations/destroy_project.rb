@@ -1,5 +1,5 @@
 class Mutations::DestroyProject < Mutations::BaseMutation
-  argument :id, String, required: true
+  argument :id, Integer, required: true
   argument :user_id, Integer, required: true
 
   field :project, Types::ProjectType, null: false

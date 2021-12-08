@@ -10,14 +10,14 @@ module Mutations
 
       describe 'resolve' do
         it 'removes a project' do
-          expect do
+
             post '/graphql', params: { query: query(id: @project1.id, user_id: @tester.id) }
 
             json = JSON.parse(response.body)
             data = json['data']
               # binding.pry
 
-          end.to change { Project.count }.by(-1)
+          expect(Project.count).to eq(0)
         end
 
         xit 'returns a project' do
@@ -37,17 +37,17 @@ module Mutations
 
       def query(id:, user_id:)
         <<~GQL
-          mutation {
-            destroyProject(input: {
-              id: #{id}
-              userId: #{user_id}
-            }) {
-              id
-              projectName
-              user {
-                userId
-              }
-            }
+        mutation {
+          destroyProject(input: {
+           id: #{id},
+           userId: #{user_id}
+          }) {
+           project {
+             id,
+             userId
+           }
+           errors
+          }
           }
         GQL
       end
