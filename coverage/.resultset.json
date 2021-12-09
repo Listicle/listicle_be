@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/kevinn/turing/mod_4/listicle_be/config/environment.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/application.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/application.rb": {
         "lines": [
           1,
           null,
@@ -54,7 +54,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/boot.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -62,7 +62,7 @@
           1
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/environments/test.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -126,7 +126,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/application_controller_renderer.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/application_controller_renderer.rb": {
         "lines": [
           null,
           null,
@@ -138,7 +138,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/backtrace_silencers.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
           null,
@@ -150,7 +150,7 @@
           1
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/cors.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/cors.rb": {
         "lines": [
           null,
           null,
@@ -170,7 +170,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/filter_parameter_logging.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/filter_parameter_logging.rb": {
         "lines": [
           null,
           null,
@@ -180,7 +180,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/inflections.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/inflections.rb": {
         "lines": [
           null,
           null,
@@ -200,7 +200,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/mime_types.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/mime_types.rb": {
         "lines": [
           null,
           null,
@@ -208,7 +208,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/initializers/wrap_parameters.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/wrap_parameters.rb": {
         "lines": [
           null,
           null,
@@ -226,7 +226,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/factories/activities.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/spec/factories/activities.rb": {
         "lines": [
           1,
           1,
@@ -237,7 +237,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/factories/projects.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/spec/factories/projects.rb": {
         "lines": [
           1,
           1,
@@ -247,7 +247,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/factories/tasks.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/spec/factories/tasks.rb": {
         "lines": [
           1,
           1,
@@ -258,7 +258,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/spec/factories/users.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/spec/factories/users.rb": {
         "lines": [
           1,
           1,
@@ -267,7 +267,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/config/routes.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/routes.rb": {
         "lines": [
           1,
           1,
@@ -277,7 +277,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/destroy_project.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/destroy_project.rb": {
         "lines": [
           1,
           1,
@@ -287,113 +287,93 @@
           1,
           null,
           1,
-          0,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/base_mutation.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/base_argument.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/base_field.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/base_input_object.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/base_object.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/base_edge.rb": {
-        "lines": [
           1,
           1,
           null,
           1,
           null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/base_connection.rb": {
-        "lines": [
-          1,
-          1,
           null,
-          1,
           null,
-          null
-        ]
-      },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/project_type.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
-          1,
           0,
           null,
           null,
+          null,
+          null,
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/activity_type.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/base_mutation.rb": {
         "lines": [
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_argument.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_field.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_input_object.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_object.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_edge.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_connection.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/project_type.rb": {
+        "lines": [
           1,
           1,
           1,
@@ -411,7 +391,27 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/task_type.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/activity_type.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/task_type.rb": {
         "lines": [
           1,
           1,
@@ -425,7 +425,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/user.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/models/user.rb": {
         "lines": [
           1,
           1,
@@ -437,14 +437,14 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/application_record.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/models/project.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/models/project.rb": {
         "lines": [
           1,
           1,
@@ -456,7 +456,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/controllers/graphql_controller.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/controllers/graphql_controller.rb": {
         "lines": [
           1,
           null,
@@ -510,13 +510,13 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/controllers/application_controller.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/listicle_be_schema.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/listicle_be_schema.rb": {
         "lines": [
           1,
           1,
@@ -571,7 +571,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/mutation_type.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/mutation_type.rb": {
         "lines": [
           1,
           1,
@@ -581,7 +581,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/mutations/create_project.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/create_project.rb": {
         "lines": [
           1,
           1,
@@ -607,7 +607,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/query_type.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/query_type.rb": {
         "lines": [
           1,
           1,
@@ -677,7 +677,7 @@
           null
         ]
       },
-      "/Users/kevinn/turing/mod_4/listicle_be/app/graphql/types/user_type.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/user_type.rb": {
         "lines": [
           1,
           1,
@@ -698,10 +698,24 @@
           null,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/models/activity.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1638858481
+    "timestamp": 1638925191
   }
 }
