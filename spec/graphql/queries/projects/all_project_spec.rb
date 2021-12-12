@@ -57,39 +57,19 @@ module Queries
       end
 
       context 'sad path' do
-        xit "can create a new project" do
-          # tester = create(:user)
-          tester = 1
-          proj1 = create(:project, user: tester)
-          proj2 = create(:project, user: tester)
-
-          def query(user_id)
-            <<~GQL
-              query {
-                projects {
-                id
-                projectName
-                activities {
-                  id
-                  title
-                  tasks {
-                    id
-                    taskName
-                  }
-                }
-              }
-            }
-            GQL
-          end
-
-          post '/graphql', params: { query: query(user_id: tester.id) }
+        it "can create a new project" do
+          post '/graphql'
           json = JSON.parse(response.body)
-          binding.pry
+
+          expect(json).to be_a(Hash)
+          expect(json).to have_key('errors')
+
+          expect(json['errors']).to be_a(Array)
+          expect(json['errors'][0]).to be_a(Hash)
+          expect(json['errors'][0]).to have_key('message')
+          expect(json['errors'][0]['message']).to eq("No query string was present")
         end
       end
     end
   end
 end
-
-# [{"id"=>"1", "projectName"=>"test query", "activities"=>[]},
-#  {"id"=>"2", "projectName"=>"yet another query", "activities"=>[]}]
