@@ -6,8 +6,8 @@ class Mutations::CreateTask < Mutations::BaseMutation
   field :task, Types::TaskType, null: false
   field :errors, [String], null: false
 
-  def resolve(task_name:, activity_id:)
-    task = Task.new(task_name: task_name, activity_id: activity_id)
+  def resolve(task_name:, completed:, activity_id:)
+    task = Task.new(task_name: task_name, completed: completed, activity_id: activity_id)
         if task.save
       {
         task: task,
