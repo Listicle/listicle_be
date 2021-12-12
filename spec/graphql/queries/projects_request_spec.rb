@@ -2,9 +2,9 @@ require 'rails_helper'
 
 module Queries
   module Projects
-    RSpec.describe 'query project',type: :request do
+    RSpec.describe 'query projects',type: :request do
       context 'happy path' do
-        it "can create a new project" do
+        it "returns projects" do
           tester = create(:user)
           proj1 = create(:project, user: tester)
           proj2 = create(:project, user: tester)
@@ -41,6 +41,7 @@ module Queries
           expect(response).to be_successful
           expect(response.status).to eq(200)
 
+          expect(json).not_to have_key('message')
           expect(json).to have_key('data')
           expect(json['data']).to be_a(Hash)
           expect(json['data']).to have_key('projects')
@@ -57,11 +58,12 @@ module Queries
       end
 
       context 'sad path' do
-        it "can create a new project" do
+        it "returns projects" do
           post '/graphql'
           json = JSON.parse(response.body)
 
           expect(json).to be_a(Hash)
+          expect(json).not_to have_key('data')
           expect(json).to have_key('errors')
 
           expect(json['errors']).to be_a(Array)
