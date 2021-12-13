@@ -138,6 +138,11 @@
           null
         ]
       },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/assets.rb": {
+        "lines": [
+          null
+        ]
+      },
       "/Users/erinquinn/turing/4module/projects/listicle_be/config/initializers/backtrace_silencers.rb": {
         "lines": [
           null,
@@ -230,9 +235,9 @@
         "lines": [
           1,
           1,
+          2,
           1,
-          1,
-          1,
+          2,
           null,
           null
         ]
@@ -277,8 +282,9 @@
           null
         ]
       },
-      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/destroy_project.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/update_activity.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -372,21 +378,21 @@
           null
         ]
       },
-      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/project_type.rb": {
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/status.rb": {
         "lines": [
           1,
           1,
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
           null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/base_enum.rb": {
+        "lines": [
           1,
-          0,
-          null,
+          1,
           null,
           null
         ]
@@ -451,6 +457,20 @@
           null,
           1,
           1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/models/activity.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
           null,
           1,
           null
@@ -577,11 +597,57 @@
           1,
           1,
           1,
+          1,
           null,
           null
         ]
       },
       "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/create_project.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/types/project_type.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/erinquinn/turing/4module/projects/listicle_be/app/graphql/mutations/destroy_project.rb": {
         "lines": [
           1,
           1,
@@ -700,22 +766,8 @@
           null,
           null
         ]
-      },
-      "/Users/erinquinn/turing/4module/projects/listicle_be/app/models/activity.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null
-        ]
       }
     },
-    "timestamp": 1638925191
+    "timestamp": 1639423229
   }
 }
