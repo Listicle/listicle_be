@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :task do
     task_name { Faker::Verb.base }
-    completed { Faker::Boolean.boolean }
+    completed { true }
     activity { 1 }
   end
 end
