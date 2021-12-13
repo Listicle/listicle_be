@@ -1,6 +1,5 @@
 class Mutations::DestroyTask < Mutations::BaseMutation
   argument :id, Integer, required: true
-  argument :completed, Boolean, required: true
   argument :activity_id, Integer, required: true
 
   field :task, Types::TaskType, null: false
