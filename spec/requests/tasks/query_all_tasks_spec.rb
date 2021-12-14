@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 module Queries
-  module Activities
-    RSpec.describe 'query activities',type: :request do
-      it "returns all activities" do
+  module Tasks
+    RSpec.describe 'query tasks',type: :request do
+      it "returns all tasks" do
         User.delete_all
         tester1 = create(:user)
         tester2 = create(:user)
@@ -26,16 +26,11 @@ module Queries
         def query
           <<~GQL
             query {
-              activities {
+              tasks {
                 id
-                projectId
-                title
-                status
-                tasksCount
-                tasks {
-                  id
-                  taskName
-                }
+                activityId
+                taskName
+                completed
               }
             }
           GQL
@@ -51,22 +46,17 @@ module Queries
         expect(json).not_to have_key('message')
         expect(json).to have_key('data')
         expect(json['data']).to be_a(Hash)
-        expect(json['data']).to have_key('activities')
-        expect(json['data']['activities']).to be_a(Array)
-        expect(json['data']['activities'].size).to eq(5)
+        expect(json['data']).to have_key('tasks')
+        expect(json['data']['tasks']).to be_a(Array)
+        expect(json['data']['tasks'].size).to eq(7)
 
-        result = json['data']['activities'].first
+        result = json['data']['tasks'].first
 
-        expect(result.size).to eq(6)
+        expect(result.size).to eq(4)
         expect(result).to have_key('id')
-        expect(result).to have_key('projectId')
-        expect(result).to have_key('title')
-        expect(result).to have_key('status')
-        expect(result).to have_key('tasksCount')
-        expect(result['tasksCount']).to eq(3)
-        expect(result).to have_key('tasks')
-        expect(result['tasks']).to be_a(Array)
-        expect(result['tasks'].size).to eq(3)
+        expect(result).to have_key('activityId')
+        expect(result).to have_key('taskName')
+        expect(result).to have_key('completed')
       end
     end
   end

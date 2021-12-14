@@ -4,6 +4,7 @@ module Queries
   module Users
     RSpec.describe 'query users',type: :request do
       it "returns all users" do
+        User.delete_all
         tester1 = create(:user)
         tester2 = create(:user)
         tester3 = create(:user)

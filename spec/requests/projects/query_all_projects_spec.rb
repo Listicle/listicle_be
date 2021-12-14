@@ -4,6 +4,7 @@ module Queries
   module Projects
     RSpec.describe 'query projects',type: :request do
       it "returns all projects" do
+        User.delete_all
         tester = create(:user)
         proj1 = create(:project, user: tester)
         proj2 = create(:project, user: tester)
