@@ -171,6 +171,8 @@ GEM
       websocket (~> 1.0)
     racc (1.6.0)
     rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.1.4.1)
@@ -311,6 +313,7 @@ DEPENDENCIES
   pg (~> 1.1)
   pry
   puma (~> 5.0)
+  rack-cors
   rails (~> 6.1.4, >= 6.1.4.1)
   rspec-rails
   rubocop-rails
