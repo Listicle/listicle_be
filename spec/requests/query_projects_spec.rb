@@ -3,24 +3,25 @@ require 'rails_helper'
 module Queries
   module Projects
     RSpec.describe 'query projects',type: :request do
-      context 'happy path' do
-        it "returns projects" do
-          tester = create(:user)
-          proj1 = create(:project, user: tester)
-          proj2 = create(:project, user: tester)
-          # proj1 = Project.create!(project_name: "test query", user: tester)
-          act1 = create(:activity, project: proj1)
-          act2 = create(:activity, project: proj2)
-          act3 = create(:activity, project: proj2)
+      before(:each) do
+        @tester = create(:user)
+        @proj1 = create(:project, user: @tester)
+        @proj2 = create(:project, user: @tester)
+        @act1 = create(:activity, project: @proj1)
+        @act2 = create(:activity, project: @proj1)
+        @act3 = create(:activity, project: @proj2)
+      end
 
+      context 'happy path' do
+        it "returns all projects" do
 
           def query(user_id:)
-
             <<~GQL
               query {
                 projects {
                 id
                 projectName
+                activitiesCount
                 activities {
                   id
                   title
@@ -34,7 +35,7 @@ module Queries
             GQL
           end
 
-          post '/graphql', params: { query: query(user_id: tester.id)}
+          post '/graphql', params: { query: query(user_id: @tester.id)}
           json = JSON.parse(response.body)
           # binding.pry
 
@@ -53,7 +54,7 @@ module Queries
           expect(result).to have_key('projectName')
           expect(result).to have_key('activities')
           expect(result['activities']).to be_a(Array)
-          expect(result['activities'].size).to eq(1)
+          expect(result['activities'].size).to eq(2)
         end
       end
 
