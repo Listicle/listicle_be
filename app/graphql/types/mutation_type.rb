@@ -4,5 +4,6 @@ module Types
     field :destroy_project, mutation: Mutations::DestroyProject
     field :update_activity, mutation: Mutations::UpdateActivity
     field :create_activity, mutation: Mutations::CreateActivity
+    field :destroy_activity, mutation: Mutations::DestroyActivity
   end
 end
