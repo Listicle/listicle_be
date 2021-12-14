@@ -1,1 +1,1 @@
-Rails.application.config.assets.precompile += […] if Rails.env.development?
+# Rails.application.config.assets.precompile += […] if Rails.env.development?
