@@ -15,6 +15,17 @@ module Mutations
           data = json['data']['updateActivity']['activity']
           @activity1.reload
           expect(@activity1.status).to eq('done')
+          expect(@activity1.title).to eq('task')
+          expect(@activity1.project_id).to eq(@project.id)
+        end
+
+        it 'returns an activity' do
+          post '/graphql', params: {query: query(id: @activity1.id)}
+          json = JSON.parse(response.body)
+          data = json['data']['updateActivity']['activity']
+          expect(data['status']).to eq('done')
+          expect(data['projectId']).to eq(@project.id)
+          expect(data['title']).to eq('task')
         end
       end
       def query(id:)
