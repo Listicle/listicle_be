@@ -6,5 +6,6 @@ class Activity < ApplicationRecord
   validates_presence_of :status
   # validates_numericality_of :status
 
-  enum status: [:to_do, :doing, :done]
+  # enum status: [:to_do, :doing, :done]
+  enum status: [:future, :current, :completed]
 end
