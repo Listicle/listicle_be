@@ -20,23 +20,14 @@ User.destroy_all
 @project2 = FactoryBot.create(:project, user: @user2)
 @project3 = FactoryBot.create(:project, user: @user2)
 
-# @activity1 = FactoryBot.create(:activity, project: @project1)
-# @activity2 = FactoryBot.create(:activity, project: @project1)
-@activity1 = @project1.activities.create!(title: "A1p1", status: 0)
-@activity2 = @project1.activities.create!(title: "A2p1", status: 1)
+@activity1 = FactoryBot.create(:activity, project: @project1)
+@activity2 = FactoryBot.create(:activity, project: @project1)
+@activity3 = FactoryBot.create(:activity, project: @project2)
+@activity4 = FactoryBot.create(:activity, project: @project2)
+@activity5 = FactoryBot.create(:activity, project: @project3)
+@activity6 = FactoryBot.create(:activity, project: @project3)
+@activity7 = FactoryBot.create(:activity, project: @project3)
 
-# @activity3 = FactoryBot.create(:activity, project: @project2)
-# @activity4 = FactoryBot.create(:activity, project: @project2)
-@activity3 = @project2.activities.create!(title: "A3p2", status: 0)
-@activity4 = @project2.activities.create!(title: "A4p2", status: 1)
-
-
-# @activity5 = FactoryBot.create(:activity, project: @project3)
-# @activity6 = FactoryBot.create(:activity, project: @project3)
-# @activity7 = FactoryBot.create(:activity, project: @project3)
-@activity5 = @project3.activities.create!(title: "A5p3", status: 0)
-@activity6 = @project3.activities.create!(title: "A6p3", status: 1)
-@activity7 = @project3.activities.create!(title: "A7p3", status: 2)
 
 @task1 = FactoryBot.create(:task, activity: @activity1)
 @task2 = FactoryBot.create(:task, activity: @activity1)

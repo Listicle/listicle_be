@@ -41,12 +41,16 @@ module Types
 
     field :activities, [Types::ActivityType], null: false
 
-    def activity
+    def activities
       Activity.all
     end
 
     field :activity, Types::ActivityType, null: false do
       argument :id, ID, required: true
+    end
+
+    def activity(id:)
+      Activity.find(id)
     end
 
     field :tasks, [Types::TaskType], null: false
