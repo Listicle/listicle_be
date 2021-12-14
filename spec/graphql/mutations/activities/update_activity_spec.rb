@@ -5,7 +5,7 @@ module Mutations
       before(:each) do
         @tester = create(:user)
         @project = create(:project, user_id: @tester.id)
-        @activity1 = create(:activity, project_id: @project.id, title: 'task', status: 'doing')
+        @activity1 = create(:activity, project_id: @project.id, title: 'task', status: 'current')
         @activity2 = create(:activity, project_id: @project.id)
       end
       describe 'resolve' do
@@ -14,7 +14,7 @@ module Mutations
           json = JSON.parse(response.body)
           data = json['data']['updateActivity']['activity']
           @activity1.reload
-          expect(@activity1.status).to eq('done')
+          expect(@activity1.status).to eq('completed')
           expect(@activity1.title).to eq('task')
           expect(@activity1.project_id).to eq(@project.id)
         end
@@ -23,7 +23,7 @@ module Mutations
           post '/graphql', params: {query: query(id: @activity1.id)}
           json = JSON.parse(response.body)
           data = json['data']['updateActivity']['activity']
-          expect(data['status']).to eq('done')
+          expect(data['status']).to eq('completed')
           expect(data['projectId']).to eq(@project.id)
           expect(data['title']).to eq('task')
         end
@@ -33,7 +33,7 @@ module Mutations
         mutation{
           updateActivity(input: {
              id: #{id},
-            status: done
+            status: completed
           })
           {
             activity {

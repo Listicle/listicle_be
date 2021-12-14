@@ -23,7 +23,7 @@ module Mutations
           data = json['data']['createActivity']['activity']
           expect(data['title']).to eq("create a task")
           expect(data['id']).to be_a(String)
-          expect(data['status']).to eq("to_do")
+          expect(data['status']).to eq("future")
           expect(data['projectId']).to eq(project.id)
         end
       end
@@ -33,7 +33,7 @@ module Mutations
       createActivity(input: {
          projectId: #{project_id},
          title: "create a task",
-        status: to_do
+        status: future
             }) {
           activity {
             title,
