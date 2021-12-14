@@ -15,15 +15,15 @@ module Queries
           <<~GQL
             query {
               user(id:#{id}) {
-              id
-              username
-              projectsCount
-              projects {
                 id
-                projectName
+                username
+                projectsCount
+                projects {
+                  id
+                  projectName
+                }
               }
             }
-          }
           GQL
         end
 

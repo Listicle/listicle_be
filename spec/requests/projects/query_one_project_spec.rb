@@ -12,26 +12,25 @@ module Queries
         act2 = create(:activity, project: proj1)
         act3 = create(:activity, project: proj2)
 
-        def query(id:,user_id:)
+        def query(id:)
           <<~GQL
             query {
               project(id:#{id}) {
-              id
-              userId
-              projectName
-              activitiesCount
-              activities {
                 id
-                title
+                userId
+                projectName
+                activitiesCount
+                activities {
+                  id
+                  title
+                }
               }
             }
-          }
           GQL
         end
 
-        post '/graphql', params: { query: query(id: proj1.id, user_id: tester1.id)}
+        post '/graphql', params: { query: query(id: proj1.id)}
         json = JSON.parse(response.body)
-        # binding.pry
 
         expect(response).to be_successful
         expect(response.status).to eq(200)
