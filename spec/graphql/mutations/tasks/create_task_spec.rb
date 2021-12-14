@@ -26,13 +26,13 @@ module Mutations
 
           json = JSON.parse(response.body)
           data = json['data']['createTask']['task']
-
+          require "pry"; binding.pry
           expect(data['id']).to be_present
           expect(data['id']).to be_a String
           expect(data['taskName']).to be_a String
           expect(data['taskName']).to eq("New boot goofin")
           # expect(data['completed']).to be_a Boolean
-          expect(data['completed']).to eq(true)
+          expect(data['completed']).to eq(false)
           expect(data['activityId']).to be_a Integer
           expect(data['activityId']).to eq(activity.id)
         end
@@ -42,7 +42,7 @@ module Mutations
         <<~GQL
           mutation {
            createTask(input: {
-             completed: true
+             completed: false
              taskName: "New boot goofin"
              activityId: #{activity_id}
            }) {

@@ -1,8 +1,8 @@
 class Mutations::UpdateTask < Mutations::BaseMutation
-  argument :id, Integer, required: true
-  argument :task_name, String, required: true
-  argument :completed, Boolean, required: true
-  argument :activity_id, Integer, required: true
+  argument :id, ID, required: true
+  argument :task_name, String, required: false
+  argument :completed, Boolean, required: false
+  argument :activity_id, Integer, required: false
 
   field :task, Types::TaskType, null: false
   field :errors, [String], null: false
