@@ -3,7 +3,7 @@ require 'rails_helper'
 module Mutations
   module Projects
     RSpec.describe CreateProject,type: :request do
-      describe '.resolve' do
+      describe 'resolve' do
         it "creates a new project" do
           tester = create(:user)
 
