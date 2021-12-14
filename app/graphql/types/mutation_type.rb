@@ -5,5 +5,6 @@ module Types
     field :create_task, mutation: Mutations::CreateTask
     field :destroy_task, mutation: Mutations::DestroyTask
     field :update_task, mutation: Mutations::UpdateTask
+    field :update_activity, mutation: Mutations::UpdateActivity 
   end
 end

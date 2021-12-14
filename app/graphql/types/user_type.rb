@@ -12,9 +12,5 @@ module Types
     def projects_count
       object.projects.size
     end
-
-    # def project(project_id:)
-    #   Project.find(project_id)
-    # end
   end
 end
