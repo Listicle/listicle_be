@@ -5,11 +5,10 @@ module Queries
     RSpec.describe 'query users',type: :request do
       before(:each) do
         User.delete_all
-        @tester1 = create(:user, username: "Jerry Seinfeld")
-        @tester2 = create(:user, username: "Soup Man")
+        @tester1 = create(:user)
         @proj1 = create(:project, user: @tester1)
         @proj2 = create(:project, user: @tester1)
-        @proj3 = create(:project, user: @tester2)
+        @proj3 = create(:project, user: @tester1)
       end
 
       it "returns one user, happy path" do
@@ -52,10 +51,10 @@ module Queries
         expect(result['username']).to eq(@tester1.username)
 
         expect(result).to have_key('projectsCount')
-        expect(result['projectsCount']).to eq(2)
+        expect(result['projectsCount']).to eq(3)
         expect(result).to have_key('projects')
         expect(result['projects']).to be_a(Array)
-        expect(result['projects'].size).to eq(2)
+        expect(result['projects'].size).to eq(3)
       end
 
       it "does not return a user without id, sad path" do
