@@ -1,7 +1,7 @@
 class Mutations::UpdateActivity < Mutations::BaseMutation
   argument :id, ID, required: true
   argument :title, String, required: false
-  argument :status, Types::Status, required: false
+  argument :status, String, required: false
 
   field :activity, Types::ActivityType, null: false
   field :errors, [String], null: false

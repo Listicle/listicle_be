@@ -33,7 +33,7 @@ module Mutations
       createActivity(input: {
          projectId: #{project_id},
          title: "create a task",
-        status: future
+        status: "future"
             }) {
           activity {
             title,

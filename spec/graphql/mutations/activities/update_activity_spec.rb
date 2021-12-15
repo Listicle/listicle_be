@@ -33,7 +33,7 @@ module Mutations
         mutation{
           updateActivity(input: {
              id: #{id},
-            status: completed
+            status: "completed"
           })
           {
             activity {

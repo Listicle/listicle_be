@@ -1,7 +1,7 @@
 class Mutations::CreateActivity < Mutations::BaseMutation
   argument :project_id, ID, required: true
   argument :title, String, required: true
-  argument :status, Types::Status, required: true
+  argument :status, String, required: true
 
   field :activity, Types::ActivityType, null: false
   field :errors, [String], null: false

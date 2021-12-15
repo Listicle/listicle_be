@@ -21,12 +21,12 @@ User.destroy_all
 @project3 = FactoryBot.create(:project, user: @user2)
 
 @activity1 = FactoryBot.create(:activity, project: @project1)
-@activity2 = FactoryBot.create(:activity, project: @project1)
+@activity2 = FactoryBot.create(:activity, project: @project1, status: "current")
 @activity3 = FactoryBot.create(:activity, project: @project2)
 @activity4 = FactoryBot.create(:activity, project: @project2)
 @activity5 = FactoryBot.create(:activity, project: @project3)
-@activity6 = FactoryBot.create(:activity, project: @project3)
-@activity7 = FactoryBot.create(:activity, project: @project3)
+@activity6 = FactoryBot.create(:activity, project: @project3, status: "current")
+@activity7 = FactoryBot.create(:activity, project: @project3, status: "completed")
 
 
 @task1 = FactoryBot.create(:task, activity: @activity1)
