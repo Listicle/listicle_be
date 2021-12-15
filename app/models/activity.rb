@@ -1,6 +1,6 @@
 class Activity < ApplicationRecord
   belongs_to :project
-  has_many :tasks
+  has_many :tasks, dependent: :destroy
 
   validates_presence_of :title
   validates_presence_of :status
