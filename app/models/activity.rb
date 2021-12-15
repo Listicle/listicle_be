@@ -3,9 +3,11 @@ class Activity < ApplicationRecord
   has_many :tasks, dependent: :destroy
 
   validates_presence_of :title
-  validates_presence_of :status
-  # validates_numericality_of :status
+  validates_inclusion_of :completed, in: ["future", "current", "completed"]
 
-  # enum status: [:to_do, :doing, :done]
-  enum status: [:future, :current, :completed]
+  # validates_presence_of :status
+  # enum status: [:future, :current, :completed]
+
+  # validates_numericality_of :status ##OLD
+  # enum status: [:to_do, :doing, :done]  ##OLD
 end
