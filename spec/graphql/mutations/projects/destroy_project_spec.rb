@@ -10,28 +10,24 @@ module Mutations
 
       describe 'resolve' do
         it 'removes a project' do
-
             post '/graphql', params: { query: query(id: @project1.id, user_id: @tester.id) }
-
             json = JSON.parse(response.body)
             data = json['data']
-              # binding.pry
 
           expect(Project.count).to eq(0)
         end
 
-        xit 'returns a project' do
-          # post '/graphql', params: { query: query(id: proj.id) }
-          # json = JSON.parse(response.body)
-          # data = json['data']['destroyProject']
-          #
-          # expect(data).to include(
-          #   'id'              => be_present,
-          #   'title'           => 'Hero',
-          #   'publicationDate' => 1984,
-          #   'genre'           => 'Horror',
-          #   'author'          => { 'id' => be_present }
-          # )
+        it 'returns a project' do
+          post '/graphql', params: { query: query(id: @project1.id, user_id: @tester.id) }
+          json = JSON.parse(response.body)
+          data = json['data']['destroyProject']['project']
+
+          expect(data).to include(
+            'id'              => "#{@project1.id}",
+            'projectName'     => @project1.project_name,
+            'userId'          => @tester.id
+          )
+
         end
       end
 
@@ -44,6 +40,7 @@ module Mutations
           }) {
            project {
              id,
+             projectName,
              userId
            }
            errors
