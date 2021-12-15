@@ -6,7 +6,7 @@ module Queries
       before(:each) do
         User.delete_all
         @tester1 = create(:user, username: "Jerry Seinfeld")
-        @tester2 = create(:user, username: "Kramer")
+        @tester2 = create(:user, username: "Soup Man")
         @proj1 = create(:project, user: @tester1)
         @proj2 = create(:project, user: @tester1)
         @proj3 = create(:project, user: @tester2)
