@@ -7,7 +7,6 @@ module Queries
         User.delete_all
         @tester1 = create(:user)
         @tester2 = create(:user)
-        @tester3 = create(:user)
         @proj1 = create(:project, user: @tester1)
         @proj2 = create(:project, user: @tester1)
         @proj3 = create(:project, user: @tester2)
